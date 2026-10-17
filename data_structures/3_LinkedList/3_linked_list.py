@@ -111,12 +111,7 @@ class LinkedList:
        if self.head.data==data:
            self.head=self.head.next
            return
-       itr=self.head
-       while itr.next:
-           if itr.next.data==data:
-               itr.next=itr.next.next
-               break
-           itr=itr.next 
+       
 
        
 

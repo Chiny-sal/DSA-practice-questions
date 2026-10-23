@@ -93,15 +93,7 @@ class LinkedList:
                 break
             itr= itr.next 
 
-    def insert_after_value2(self, data_after, data_inserted):
-        itr= self.head
-        while itr:
-            if itr.data==data_after:
-                node = Node(data_inserted,itr.next)
-                itr.next= node
-                break
-            itr= itr.next 
-
+    
     def remove_by_value(self, data):
        if self.head==None:
            return

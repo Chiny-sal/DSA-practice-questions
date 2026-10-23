@@ -114,12 +114,7 @@ class LinkedList:
                itr.next=itr.next.next
                break
            itr=itr.next 
-    def remove_by_value2(self, data):
-       if self.head==None:
-           return
-       if self.head.data==data:
-           self.head=self.head.next
-           return
+   
     def remove_by_value(self, data):   #correct value on solution
         if self.head is None:
             return

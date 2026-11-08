@@ -110,43 +110,7 @@ class LinkedList:
 
 
 
-    def remove_by_value(self,data):
-        if self.head== None:
-            return None
-        if self.head.data==data:
-            self.head= self.head.next
-            return
-        itr= self.head
-        while itr.next:
-            if itr.next.data==data:
-                itr.next=itr.next.next
-                return
-            itr=itr.next
-
-
-    def potatoes(self,data):
     
-        if self.head==None:
-            return None
-        if self.head.data==data:
-            self.head=self.head.next
-            return
-        itr= self.head
-        while itr.next:
-            if itr.next.data==data:
-                itr.next=itr.next.next
-                return
-            itr=itr.next
-            
-        
-    
-    #     elif i.next.next==None and i.next.data==data:
-    #         i.next=None
-    #     elif i.data==data and i.next!=None:
-    #         self.head=i.next
-    #     elif i.next.data==data and i.next.next!=None:
-    #         i.next=i.next.next
-    # return self    
 
 if __name__ == '__main__':
     ll = LinkedList()

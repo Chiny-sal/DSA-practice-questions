@@ -62,37 +62,6 @@ class LinkedList:
             itr = itr.next
             count += 1
 
-    def remove_at(self, index):
-        if index<0 or index>=self.get_length():
-            raise Exception("Invalid Index")
-
-        if index==0:
-            self.head = self.head.next
-            return
-
-        count = 0
-        itr = self.head
-        while itr:
-            if count == index - 1:
-                itr.next = itr.next.next
-                break
-
-            itr = itr.next
-            count+=1
-
-    def insert_values(self, data_list):
-        self.head = None
-        for data in data_list:
-            self.insert_at_end(data)
-    def insert_after_value(self, data_after, data_inserted):
-        itr= self.head
-        while itr:
-            if itr.data==data_after:
-                node = Node(data_inserted,itr.next)
-                itr.next= node
-                break
-            itr= itr.next 
-
     
     # def remove_by_value(self, data):
     #    if self.head==None:

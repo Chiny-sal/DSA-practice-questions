@@ -137,6 +137,21 @@ class LinkedList:
                 itr.next=itr.next.next
                 return
             itr=itr.next
+
+    
+    def potatoes(self,data):
+    
+        if self.head==None:
+            return None
+        if self.head.data==data:
+            self.head=self.head.next
+            return
+        itr= self.head
+        while itr.next:
+            if itr.next.data==data:
+                itr.next=itr.next.next
+                return
+            itr=itr.next
             
         
     
